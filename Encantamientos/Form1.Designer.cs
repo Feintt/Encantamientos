@@ -35,7 +35,6 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pictureBoxEnchantment = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.labelEnchantments = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.pictureBoxProperties = new System.Windows.Forms.PictureBox();
@@ -44,10 +43,11 @@
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.labelNotifications = new System.Windows.Forms.Label();
+            this.textBoxLevel = new System.Windows.Forms.TextBox();
+            this.labelLevel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnchantment)).BeginInit();
-            this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperties)).BeginInit();
             this.SuspendLayout();
@@ -60,16 +60,20 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.labelTitle);
             this.groupBox1.Location = new System.Drawing.Point(-4, -7);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(890, 119);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(891, 119);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox2
             // 
-            this.groupBox2.Location = new System.Drawing.Point(6, 125);
+            this.groupBox2.Location = new System.Drawing.Point(5, 126);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Size = new System.Drawing.Size(200, 100);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -97,8 +101,10 @@
             this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.labelEnchantments);
             this.groupBox3.Location = new System.Drawing.Point(12, 181);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(194, 393);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(195, 393);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             // 
@@ -106,6 +112,7 @@
             // 
             this.pictureBoxEnchantment.Image = global::Encantamientos.Properties.Resources.Enchanted_book_jpeg;
             this.pictureBoxEnchantment.Location = new System.Drawing.Point(139, 11);
+            this.pictureBoxEnchantment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxEnchantment.Name = "pictureBoxEnchantment";
             this.pictureBoxEnchantment.Size = new System.Drawing.Size(39, 36);
             this.pictureBoxEnchantment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -114,22 +121,14 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.listBox1);
-            this.groupBox5.Location = new System.Drawing.Point(26, 46);
+            this.groupBox5.Location = new System.Drawing.Point(27, 46);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(144, 307);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Size = new System.Drawing.Size(144, 306);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(0, 1);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(144, 308);
-            this.listBox1.TabIndex = 0;
             // 
             // labelEnchantments
             // 
@@ -153,8 +152,10 @@
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(212, 181);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(658, 393);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(659, 393);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             // 
@@ -162,6 +163,7 @@
             // 
             this.pictureBoxProperties.Image = global::Encantamientos.Properties.Resources.wrench;
             this.pictureBoxProperties.Location = new System.Drawing.Point(373, 9);
+            this.pictureBoxProperties.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxProperties.Name = "pictureBoxProperties";
             this.pictureBoxProperties.Size = new System.Drawing.Size(39, 36);
             this.pictureBoxProperties.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -171,9 +173,11 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Location = new System.Drawing.Point(42, 46);
+            this.groupBox6.Location = new System.Drawing.Point(43, 46);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(580, 307);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox6.Size = new System.Drawing.Size(580, 306);
             this.groupBox6.TabIndex = 2;
             this.groupBox6.TabStop = false;
             // 
@@ -191,10 +195,11 @@
             // textBoxSearch
             // 
             this.textBoxSearch.Font = new System.Drawing.Font("Minecraft", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearch.Location = new System.Drawing.Point(230, 127);
+            this.textBoxSearch.Location = new System.Drawing.Point(229, 127);
+            this.textBoxSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(628, 25);
-            this.textBoxSearch.TabIndex = 4;
+            this.textBoxSearch.Size = new System.Drawing.Size(498, 25);
+            this.textBoxSearch.TabIndex = 1;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             this.textBoxSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSearch_KeyPress);
             // 
@@ -206,9 +211,10 @@
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearch.Font = new System.Drawing.Font("Minecraft", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSearch.Location = new System.Drawing.Point(27, 118);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(179, 40);
-            this.buttonSearch.TabIndex = 5;
+            this.buttonSearch.Size = new System.Drawing.Size(179, 39);
+            this.buttonSearch.TabIndex = 3;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = false;
             // 
@@ -221,13 +227,37 @@
             this.labelNotifications.Size = new System.Drawing.Size(0, 13);
             this.labelNotifications.TabIndex = 6;
             // 
+            // textBoxLevel
+            // 
+            this.textBoxLevel.Font = new System.Drawing.Font("Minecraft", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxLevel.Location = new System.Drawing.Point(824, 127);
+            this.textBoxLevel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxLevel.Name = "textBoxLevel";
+            this.textBoxLevel.Size = new System.Drawing.Size(37, 25);
+            this.textBoxLevel.TabIndex = 2;
+            this.textBoxLevel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxLevel.TextChanged += new System.EventHandler(this.textBoxLevel_TextChanged);
+            this.textBoxLevel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxLevel_KeyPress);
+            // 
+            // labelLevel
+            // 
+            this.labelLevel.AutoSize = true;
+            this.labelLevel.Font = new System.Drawing.Font("Minecraft", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLevel.Location = new System.Drawing.Point(752, 133);
+            this.labelLevel.Name = "labelLevel";
+            this.labelLevel.Size = new System.Drawing.Size(62, 15);
+            this.labelLevel.TabIndex = 8;
+            this.labelLevel.Text = "Power";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(882, 653);
+            this.ClientSize = new System.Drawing.Size(883, 654);
+            this.Controls.Add(this.labelLevel);
+            this.Controls.Add(this.textBoxLevel);
             this.Controls.Add(this.labelNotifications);
             this.Controls.Add(this.buttonSearch);
             this.Controls.Add(this.textBoxSearch);
@@ -235,6 +265,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.RightToLeftLayout = true;
@@ -246,7 +277,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnchantment)).EndInit();
-            this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProperties)).EndInit();
@@ -270,8 +300,9 @@
         private System.Windows.Forms.Button buttonSearch;
         private System.Windows.Forms.PictureBox pictureBoxEnchantment;
         private System.Windows.Forms.PictureBox pictureBoxProperties;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label labelNotifications;
+        private System.Windows.Forms.TextBox textBoxLevel;
+        private System.Windows.Forms.Label labelLevel;
     }
 }
 

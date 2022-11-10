@@ -10,14 +10,18 @@ PRESENTATION:
 	5.- Integrate a "delete" option, to delete an enchantment from the database  T
 	6.- Integrate a "modify" option, to modify an enchantment from the database  T
 	7.- Integrate a "search" option, to search an enchantment from the database  F
-	8.- Validate the text and print an error message if the text is not valid  F
+	8.- Validate the textEnchantmentBox and print an error message if the text is not valid  F
+	9.- Validate the textPowerBox and print an error message if the text is not valid  F
+	
 	
 
 BUSSINES:
-	1.- Validate all the text fields  F
+	1.- Validate the textEnchantmentBox if it is a letter, and return "true" or "false" depending on the KeyPress  F
 	2.- Validate the text and print an error message if the text is not valid  F
-	3.- Change the color of the text fields when the text is not valid  F
-	4.- Change the color of the text fields when the text is valid  F
+	3.- Validate the textPowerBox if it is a number, and return "true" or "false" depending on the KeyPress  F
+	4 Validate the text and print an error message if the text is not a number F
+	5.- Change the color of the text fields when the text is not valid  F
+	6.- Change the color of the text fields when the text is valid  F
 	
 
 DATA:

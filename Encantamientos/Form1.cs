@@ -56,21 +56,47 @@ namespace Encantamientos
             {
                 buttonSearch.ForeColor = Color.Black;
                 buttonSearch.FlatStyle = FlatStyle.Flat;
+                buttonSearch.Cursor = Cursors.Default;
                 labelNotifications.Text = "No se ha ingresado ningun texto";
             }
             else
             {
                 buttonSearch.ForeColor = Color.Green;
                 buttonSearch.FlatStyle = FlatStyle.Popup;
+                buttonSearch.Cursor = Cursors.Hand;
                 labelNotifications.Text = "";
             }
         }
 
         private void textBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (enchants.textBoxEvents.KeyPressed(e))
+            if (enchants.validateLetter.KeyPressedIsLetter(e))
             {
                 labelNotifications.Text = "No se permiten numeros o caracteres especiales";
+            }
+            else
+            {
+                labelNotifications.Text = "";
+            }
+        }
+
+        private void textBoxLevel_TextChanged(object sender, EventArgs e)
+        {
+            if (textBoxLevel.Text.Equals(""))
+            {
+                labelLevel.ForeColor = Color.Black;
+            }
+            else
+            {
+                labelLevel.ForeColor = Color.Green;
+            }
+        }
+
+        private void textBoxLevel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (enchants.validateNumber.KeyPressedIsNumber(e))
+            {
+                labelNotifications.Text = "No se permiten letras o simbolos en este espacio";
             }
             else
             {

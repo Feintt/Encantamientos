@@ -7,9 +7,9 @@ using System.Windows.Forms;
 
 namespace Logic.Library
 {
-    public class TextBoxEvents
+    public class ValidateLetter
     {
-        public bool KeyPressed(KeyPressEventArgs e)
+        public bool KeyPressedIsLetter(KeyPressEventArgs e)
         {
             // We validate if the key pressed is a letter
             if (char.IsLetter(e.KeyChar))
