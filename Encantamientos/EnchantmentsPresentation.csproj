@@ -33,7 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icon %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -68,6 +69,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -83,8 +85,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon %281%29.ico" />
+    <None Include="Resources\Enchanted_book.ico" />
+    <None Include="Resources\Enchanted_book.jpeg.jfif" />
+    <None Include="Resources\wrench.jfif" />
     <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logic\Logic.csproj">
+      <Project>{f51806bf-d237-4647-9724-724ed8c22465}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

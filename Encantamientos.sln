@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encantamientos", "Encantamientos\Encantamientos.csproj", "{2E020871-2F91-48F2-8668-4D8F7C2ECCAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnchantmentsPresentation", "Encantamientos\EnchantmentsPresentation.csproj", "{2E020871-2F91-48F2-8668-4D8F7C2ECCAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{59C2E5C9-0733-45DC-8CE3-EB255FAB0743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{F51806BF-D237-4647-9724-724ED8C22465}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2E020871-2F91-48F2-8668-4D8F7C2ECCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E020871-2F91-48F2-8668-4D8F7C2ECCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E020871-2F91-48F2-8668-4D8F7C2ECCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C2E5C9-0733-45DC-8CE3-EB255FAB0743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C2E5C9-0733-45DC-8CE3-EB255FAB0743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C2E5C9-0733-45DC-8CE3-EB255FAB0743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C2E5C9-0733-45DC-8CE3-EB255FAB0743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F51806BF-D237-4647-9724-724ED8C22465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51806BF-D237-4647-9724-724ED8C22465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51806BF-D237-4647-9724-724ED8C22465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51806BF-D237-4647-9724-724ED8C22465}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

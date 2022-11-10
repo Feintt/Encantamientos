@@ -1,10 +1,26 @@
-﻿TODO:
+﻿THREE-LAYER DESIGN
 
-1.- Integrate the new design in the current form  F
-2.- Integrate de search bar into the form  F
-3.- integrate the SQL server into de application  P
-4.- Fill the database with the knonwn enchantments  T
-5.- Integrate an "add" option, to add a new enchantment with its properties to the database  T
+TODO:
+
+PRESENTATION:
+	1.- Integrate the new design in the current form  F
+	2.- integrate the SQL server into de application  P
+	3.- Fill the database with the knonwn enchantments  T
+	4.- Integrate an "add" option, to add a new enchantment with its properties to the database  T
+	5.- Integrate a "delete" option, to delete an enchantment from the database  T
+	6.- Integrate a "modify" option, to modify an enchantment from the database  T
+	7.- Integrate a "search" option, to search an enchantment from the database  F
+	8.- Validate the text and print an error message if the text is not valid  F
+	
+
+BUSSINES:
+	1.- Validate all the text fields  F
+	2.- Validate the text and print an error message if the text is not valid  F
+	3.- Change the color of the text fields when the text is not valid  F
+	4.- Change the color of the text fields when the text is valid  F
+	
+
+DATA:
 
 F  -----> Finished
 P  -----> Pending
