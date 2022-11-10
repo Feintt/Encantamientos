@@ -1,0 +1,11 @@
+﻿TODO:
+
+1.- Integrate the new design in the current form  F
+2.- Integrate de search bar into the form  F
+3.- integrate the SQL server into de application  P
+4.- Fill the database with the knonwn enchantments  T
+5.- Integrate an "add" option, to add a new enchantment with its properties to the database  T
+
+F  -----> Finished
+P  -----> Pending
+T  -----> To do
