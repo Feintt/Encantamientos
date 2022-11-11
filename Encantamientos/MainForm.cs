@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Encantamientos
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private Enchantments enchants = new Enchantments();
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -102,6 +102,13 @@ namespace Encantamientos
             {
                 labelNotifications.Text = "";
             }
+        }
+
+        private void buttonAddEnchantment_Click(object sender, EventArgs e)
+        {
+            AddEnchantmentForm addEnchantmentForm = new AddEnchantmentForm();
+            addEnchantmentForm.Show();
+            
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Encantamientos
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.labelTitle = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@
             this.labelNotifications = new System.Windows.Forms.Label();
             this.textBoxLevel = new System.Windows.Forms.TextBox();
             this.labelLevel = new System.Windows.Forms.Label();
+            this.buttonAddEnchantment = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEnchantment)).BeginInit();
@@ -249,6 +250,22 @@
             this.labelLevel.TabIndex = 8;
             this.labelLevel.Text = "Power";
             // 
+            // buttonAddEnchantment
+            // 
+            this.buttonAddEnchantment.BackColor = System.Drawing.Color.White;
+            this.buttonAddEnchantment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonAddEnchantment.FlatAppearance.BorderSize = 0;
+            this.buttonAddEnchantment.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAddEnchantment.Font = new System.Drawing.Font("Minecraft", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddEnchantment.Location = new System.Drawing.Point(255, 592);
+            this.buttonAddEnchantment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonAddEnchantment.Name = "buttonAddEnchantment";
+            this.buttonAddEnchantment.Size = new System.Drawing.Size(384, 39);
+            this.buttonAddEnchantment.TabIndex = 9;
+            this.buttonAddEnchantment.Text = "Add enchantment";
+            this.buttonAddEnchantment.UseVisualStyleBackColor = false;
+            this.buttonAddEnchantment.Click += new System.EventHandler(this.buttonAddEnchantment_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -256,6 +273,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(883, 654);
+            this.Controls.Add(this.buttonAddEnchantment);
             this.Controls.Add(this.labelLevel);
             this.Controls.Add(this.textBoxLevel);
             this.Controls.Add(this.labelNotifications);
@@ -303,6 +321,7 @@
         private System.Windows.Forms.Label labelNotifications;
         private System.Windows.Forms.TextBox textBoxLevel;
         private System.Windows.Forms.Label labelLevel;
+        private System.Windows.Forms.Button buttonAddEnchantment;
     }
 }
 
