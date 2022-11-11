@@ -29,6 +29,7 @@ namespace Logic.Library
                 e.Handled = false;
                 return false;
             }
+            // We valiate if the key pressed is a backspace
             else if (e.KeyChar == Convert.ToChar(Keys.Space))
             {
                 e.Handled = false;
