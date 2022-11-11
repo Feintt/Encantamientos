@@ -67,7 +67,6 @@
             this.groupBox1.Size = new System.Drawing.Size(891, 119);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox2
             // 
@@ -90,7 +89,6 @@
             this.labelTitle.Size = new System.Drawing.Size(638, 61);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "ENCHANTMENT DB";
-            this.labelTitle.Click += new System.EventHandler(this.label1_Click);
             // 
             // groupBox3
             // 
@@ -119,6 +117,7 @@
             this.pictureBoxEnchantment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxEnchantment.TabIndex = 2;
             this.pictureBoxEnchantment.TabStop = false;
+            this.pictureBoxEnchantment.Click += new System.EventHandler(this.pictureBoxEnchantment_Click);
             // 
             // groupBox5
             // 
@@ -129,7 +128,6 @@
             this.groupBox5.Size = new System.Drawing.Size(144, 306);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // labelEnchantments
             // 
@@ -208,6 +206,7 @@
             // 
             this.buttonSearch.BackColor = System.Drawing.Color.White;
             this.buttonSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSearch.Enabled = false;
             this.buttonSearch.FlatAppearance.BorderSize = 0;
             this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSearch.Font = new System.Drawing.Font("Minecraft", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -266,7 +265,7 @@
             this.buttonAddEnchantment.UseVisualStyleBackColor = false;
             this.buttonAddEnchantment.Click += new System.EventHandler(this.buttonAddEnchantment_Click);
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -285,11 +284,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Enchantment DB";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);

@@ -19,32 +19,7 @@ namespace Encantamientos
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void pictureBoxProperties_Click(object sender, EventArgs e)
         {
             enchants.uploadImage.LoadImage(pictureBoxProperties);
@@ -54,17 +29,11 @@ namespace Encantamientos
         {
             if (textBoxSearch.Text.Equals(""))
             {
-                buttonSearch.ForeColor = Color.Black;
-                buttonSearch.FlatStyle = FlatStyle.Flat;
-                buttonSearch.Cursor = Cursors.Default;
-                labelNotifications.Text = "No se ha ingresado ningun texto";
+                buttonSearch.Enabled = false;
             }
             else
             {
-                buttonSearch.ForeColor = Color.Green;
-                buttonSearch.FlatStyle = FlatStyle.Popup;
-                buttonSearch.Cursor = Cursors.Hand;
-                labelNotifications.Text = "";
+                buttonSearch.Enabled = true;
             }
         }
 
@@ -108,7 +77,12 @@ namespace Encantamientos
         {
             AddEnchantmentForm addEnchantmentForm = new AddEnchantmentForm();
             addEnchantmentForm.Show();
-            
+
+        }
+
+        private void pictureBoxEnchantment_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
