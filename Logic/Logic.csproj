@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enchantments.cs" />
+    <Compile Include="Library\Calls\ButtonUnlock.cs" />
     <Compile Include="Library\Calls\ValidateNumber.cs" />
     <Compile Include="Library\EventsObjects.cs" />
     <Compile Include="Library\Calls\ValidateLetter.cs" />
