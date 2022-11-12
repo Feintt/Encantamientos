@@ -1,7 +1,9 @@
-﻿using Logic;
+﻿using Data;
+using Logic;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using LinqToDB;
 
 namespace Encantamientos
 {
@@ -65,15 +67,14 @@ namespace Encantamientos
             ListOfProperties.Add(textBoxPower);
             ListOfProperties.Add(textBoxTreasure);
 
-            //DBConection db = new DBConection();
-
-            //db.Insert(new EnchantmentDB()
-            //{
-            //    eName = ListOfProperties[0].Text,
-            //    eDescription = ListOfProperties[1].Text,
-            //    ePower = ListOfProperties[2].Text,
-            //    eTreasure = ListOfProperties[3].Text
-            //});
+            Connection db = new Connection();
+            db.Insert(new EnchantmentsDB()
+            {
+                eName = ListOfProperties[0].Text,
+                eDescription = ListOfProperties[1].Text,
+                ePower = ListOfProperties[2].Text,
+                eTreasure = ListOfProperties[3].Text
+            });
             this.Close();
         }
         private void textBoxPower_TextChanged(object sender, EventArgs e)
