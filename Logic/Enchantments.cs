@@ -1,8 +1,4 @@
-﻿using Data;
-using LinqToDB;
-using Logic.Library;
-using System.Collections.Generic;
-using System.Windows.Forms;
+﻿using Logic.Library;
 
 
 namespace Logic
@@ -24,27 +20,9 @@ namespace Logic
 
     public class Enchantments : EventsObjects
     {
-        private List<TextBox> listOfProperties;
-        private EventsObjects eventsObjects = new EventsObjects();
-
-        public Enchantments(List<TextBox> listOfProperties)
-        {
-            this.listOfProperties = listOfProperties;
-        }
         public Enchantments()
         {
 
-        }
-        public void AddEnchantment(List<TextBox> properties) 
-        {
-            Connection db = new Connection();
-            db.Insert(new EnchantmentsDB()
-            {
-                eName = listOfProperties[0].Text,
-                eDescription = listOfProperties[1].Text,
-                ePower = listOfProperties[2].Text,
-                eTreasure = listOfProperties[3].Text
-            });
         }
     }
 }

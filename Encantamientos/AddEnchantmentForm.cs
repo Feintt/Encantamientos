@@ -66,15 +66,11 @@ namespace Encantamientos
             ListOfProperties.Add(textBoxEnchantmentDescription);
             ListOfProperties.Add(textBoxPower);
             ListOfProperties.Add(textBoxTreasure);
+            
+            // We call the method that adds the enchantment to the database
+            enchantments.dBlogic.AddEnchantment(ListOfProperties);
 
-            Connection db = new Connection();
-            db.Insert(new EnchantmentsDB()
-            {
-                eName = ListOfProperties[0].Text,
-                eDescription = ListOfProperties[1].Text,
-                ePower = ListOfProperties[2].Text,
-                eTreasure = ListOfProperties[3].Text
-            });
+            // W close the form
             this.Close();
         }
         private void textBoxPower_TextChanged(object sender, EventArgs e)
