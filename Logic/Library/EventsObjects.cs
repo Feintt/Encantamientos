@@ -10,9 +10,11 @@ namespace Logic.Library
         public ValidateLetter validateLetter = new ValidateLetter();
         // We create an object of the class "ValidateNumber"
         public ValidateNumber validateNumber = new ValidateNumber();
-        //We create an object of the struct "EnchantmentProperties" from the class "ButtonUnlocks"
+        // We create an object of the struct "EnchantmentProperties" from the class "ButtonUnlocks"
         public EnchantmentProperties enchantmentProperties = new EnchantmentProperties(false, false, false, false);
-        //We create an object of the class "ButtonUnlocks"
+        // We create an object of the class "ButtonUnlocks"
         public ButtonUnlock buttonUnlocks = new ButtonUnlock();
+        // We create an object of the class "DBlogic"
+        public DBlogic dBlogic = new DBlogic();
     }
 }

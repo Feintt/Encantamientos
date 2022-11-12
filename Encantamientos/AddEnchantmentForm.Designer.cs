@@ -62,7 +62,6 @@
             this.labelAddTittle.Size = new System.Drawing.Size(442, 61);
             this.labelAddTittle.TabIndex = 0;
             this.labelAddTittle.Text = "Properties";
-
             // 
             // labelEnchantmentName
             // 
@@ -99,6 +98,7 @@
             this.textBoxEnchantmentDescription.Location = new System.Drawing.Point(313, 241);
             this.textBoxEnchantmentDescription.Multiline = true;
             this.textBoxEnchantmentDescription.Name = "textBoxEnchantmentDescription";
+            this.textBoxEnchantmentDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxEnchantmentDescription.Size = new System.Drawing.Size(342, 171);
             this.textBoxEnchantmentDescription.TabIndex = 4;
             this.textBoxEnchantmentDescription.TextChanged += new System.EventHandler(this.textBoxEnchantmentDescription_TextChanged);
@@ -137,8 +137,9 @@
             // 
             this.textBoxTreasure.Font = new System.Drawing.Font("Minecraft", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTreasure.Location = new System.Drawing.Point(313, 575);
+            this.textBoxTreasure.MaxLength = 3;
             this.textBoxTreasure.Name = "textBoxTreasure";
-            this.textBoxTreasure.Size = new System.Drawing.Size(40, 30);
+            this.textBoxTreasure.Size = new System.Drawing.Size(66, 30);
             this.textBoxTreasure.TabIndex = 8;
             this.textBoxTreasure.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             this.textBoxTreasure.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTreasure_KeyPress);
