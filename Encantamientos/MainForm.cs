@@ -12,6 +12,8 @@ namespace Encantamientos
         {
             InitializeComponent();
             enchants.dBlogic.SearchStudent(textBoxSearch, dataGridView1);
+            enchants.dBlogic.DisplayProperties(textBoxSearch, dataGridView2);
+
         }
 
         private void pictureBoxProperties_Click(object sender, EventArgs e)
@@ -22,6 +24,7 @@ namespace Encantamientos
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
             enchants.dBlogic.SearchStudent(textBoxSearch, dataGridView1);
+            enchants.dBlogic.DisplayProperties(textBoxSearch, dataGridView2);
         }
 
         private void textBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
@@ -79,7 +82,7 @@ namespace Encantamientos
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            enchants.dBlogic.DisplayProperties(listOfProperties, dataGridView1);
+
         }
     }
 }
