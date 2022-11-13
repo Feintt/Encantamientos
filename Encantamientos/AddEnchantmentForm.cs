@@ -1,9 +1,7 @@
-﻿using Data;
-using Logic;
+﻿using Logic;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using LinqToDB;
 
 namespace Encantamientos
 {
@@ -66,12 +64,20 @@ namespace Encantamientos
             ListOfProperties.Add(textBoxEnchantmentDescription);
             ListOfProperties.Add(textBoxPower);
             ListOfProperties.Add(textBoxTreasure);
-            
-            // We call the method that adds the enchantment to the database
-            enchantments.dBlogic.AddEnchantment(ListOfProperties);
 
-            // W close the form
-            this.Close();
+            if (enchantments.dBlogic.EnchantmentExists(ListOfProperties))
+            {
+                labelError.Text = "This enchantment already exists";
+            }
+            else
+            {
+                // We call the method that adds the enchantment to the database
+                enchantments.dBlogic.AddEnchantment(ListOfProperties);
+
+                // W close the form
+                this.Close();
+            }
+
         }
         private void textBoxPower_TextChanged(object sender, EventArgs e)
         {
@@ -96,6 +102,11 @@ namespace Encantamientos
         private void textBoxTreasure_KeyPress(object sender, KeyPressEventArgs e)
         {
             enchantments.validateLetter.KeyPressedIsLetter(e);
+        }
+
+        private void textBoxEnchantmentName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            labelError.Text = "";
         }
     }
 }

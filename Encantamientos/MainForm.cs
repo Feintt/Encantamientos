@@ -1,13 +1,6 @@
 ﻿using Logic;
-using Logic.Library;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Encantamientos
@@ -18,8 +11,9 @@ namespace Encantamientos
         public MainForm()
         {
             InitializeComponent();
+            enchants.dBlogic.SearchStudent(textBoxSearch, dataGridView1);
         }
-        
+
         private void pictureBoxProperties_Click(object sender, EventArgs e)
         {
             enchants.uploadImage.LoadImage(pictureBoxProperties);
@@ -27,14 +21,7 @@ namespace Encantamientos
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxSearch.Text.Equals(""))
-            {
-                buttonSearch.Enabled = false;
-            }
-            else
-            {
-                buttonSearch.Enabled = true;
-            }
+            enchants.dBlogic.SearchStudent(textBoxSearch, dataGridView1);
         }
 
         private void textBoxSearch_KeyPress(object sender, KeyPressEventArgs e)
@@ -83,6 +70,16 @@ namespace Encantamientos
         private void pictureBoxEnchantment_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void labelError_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            enchants.dBlogic.DisplayProperties(listOfProperties, dataGridView1);
         }
     }
 }
