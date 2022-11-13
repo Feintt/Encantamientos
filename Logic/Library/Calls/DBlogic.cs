@@ -1,11 +1,9 @@
 ﻿using Data;
 using LinqToDB;
-using System.Collections.Generic;
-using System.Windows.Forms;
 using System;
+using System.Collections.Generic;
 using System.Linq;
-using LinqToDB.Linq;
-using System.Collections;
+using System.Windows.Forms;
 
 namespace Logic.Library.Calls
 {
@@ -50,7 +48,7 @@ namespace Logic.Library.Calls
 		}
 
 		private int _reg_by_page = 1000, _num_of_pages = 1;
-		public void SearchStudent(TextBox searchBar, DataGridView dataGridView)
+		public void SearchEnchantment(TextBox searchBar, DataGridView dataGridView)
 		{
 			int head = (_num_of_pages - 1) * _reg_by_page;
 			List<EnchantmentsDB> query = new List<EnchantmentsDB>();
@@ -70,9 +68,39 @@ namespace Logic.Library.Calls
 				}).Skip(head).Take(_reg_by_page).ToList();
 			}
 		}
-        
+
 		public void DisplayProperties(TextBox searchBar, DataGridView dataGridView)
 		{
+			int head = (_num_of_pages - 1) * _reg_by_page;
+			List<EnchantmentsDB> query = new List<EnchantmentsDB>();
+			if (searchBar.Text.Equals(""))
+			{
+				query = enchantmentsSB.ToList();
+			}
+			else
+			{
+				query = enchantmentsSB.Where(c => c.eName.StartsWith(searchBar.Text)).ToList();
+			}
+			if (0 < query.Count)
+			{
+				dataGridView.DataSource = query.Select(c => new
+				{
+                    c.id,
+                    c.eName,
+					c.eDescription,
+					c.ePower,
+					c.eTreasure
+				}).Skip(head).Take(_reg_by_page).ToList();
+			}
+			dataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+			dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView.Columns[0].Visible = false;
+            dataGridView.Columns[1].Visible = false;
+            dataGridView.Columns[2].Width = 215;
+        }
+
+        public void DisplayName(TextBox searchBar, DataGridView dataGridView)
+        {
             int head = (_num_of_pages - 1) * _reg_by_page;
             List<EnchantmentsDB> query = new List<EnchantmentsDB>();
             if (searchBar.Text.Equals(""))
@@ -87,12 +115,25 @@ namespace Logic.Library.Calls
             {
                 dataGridView.DataSource = query.Select(c => new
                 {
+                    c.id,
                     c.eName,
                     c.eDescription,
                     c.ePower,
                     c.eTreasure
                 }).Skip(head).Take(_reg_by_page).ToList();
             }
+            dataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView.Columns[0].Visible = false;
+            dataGridView.Columns[2].Visible = false;
+            dataGridView.Columns[3].Visible = false;
+            dataGridView.Columns[4].Visible = false;
+        }
+        public void RemoveEnchantment(DataGridView dataGridView, TextBox searchBar)
+		{
+            int ID = Convert.ToInt16(dataGridView.CurrentRow.Cells[0].Value);
+            enchantmentsSB.Where(c => c.id == ID).Delete();
+            DisplayProperties(searchBar, dataGridView);
         }
 	}
 }

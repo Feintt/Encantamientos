@@ -108,5 +108,15 @@ namespace Encantamientos
         {
             labelError.Text = "";
         }
+
+        private void textBoxEnchantmentDescription_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // If the user press the space bar, we append 2 more sapce bars
+            if (e.KeyChar == Convert.ToChar(Keys.Space))
+            {
+                textBoxEnchantmentDescription.AppendText("  ");
+            }
+
+        }
     }
 }

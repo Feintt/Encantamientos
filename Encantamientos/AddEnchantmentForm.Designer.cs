@@ -96,7 +96,7 @@
             // 
             // textBoxEnchantmentDescription
             // 
-            this.textBoxEnchantmentDescription.Font = new System.Drawing.Font("Minecraft", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEnchantmentDescription.Font = new System.Drawing.Font("Minecraft", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEnchantmentDescription.Location = new System.Drawing.Point(313, 241);
             this.textBoxEnchantmentDescription.Multiline = true;
             this.textBoxEnchantmentDescription.Name = "textBoxEnchantmentDescription";
@@ -104,6 +104,7 @@
             this.textBoxEnchantmentDescription.Size = new System.Drawing.Size(342, 171);
             this.textBoxEnchantmentDescription.TabIndex = 4;
             this.textBoxEnchantmentDescription.TextChanged += new System.EventHandler(this.textBoxEnchantmentDescription_TextChanged);
+            this.textBoxEnchantmentDescription.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEnchantmentDescription_KeyPress);
             // 
             // labelPower
             // 
@@ -122,6 +123,7 @@
             this.textBoxPower.Name = "textBoxPower";
             this.textBoxPower.Size = new System.Drawing.Size(40, 30);
             this.textBoxPower.TabIndex = 6;
+            this.textBoxPower.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxPower.TextChanged += new System.EventHandler(this.textBoxPower_TextChanged);
             this.textBoxPower.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPower_KeyPress);
             // 
@@ -143,6 +145,7 @@
             this.textBoxTreasure.Name = "textBoxTreasure";
             this.textBoxTreasure.Size = new System.Drawing.Size(66, 30);
             this.textBoxTreasure.TabIndex = 8;
+            this.textBoxTreasure.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBoxTreasure.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             this.textBoxTreasure.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxTreasure_KeyPress);
             // 

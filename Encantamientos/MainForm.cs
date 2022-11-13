@@ -11,7 +11,7 @@ namespace Encantamientos
         public MainForm()
         {
             InitializeComponent();
-            enchants.dBlogic.SearchStudent(textBoxSearch, dataGridView1);
+            enchants.dBlogic.SearchEnchantment(textBoxSearch, dataGridView1);
             enchants.dBlogic.DisplayProperties(textBoxSearch, dataGridView2);
 
         }
@@ -23,7 +23,7 @@ namespace Encantamientos
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
-            enchants.dBlogic.SearchStudent(textBoxSearch, dataGridView1);
+            enchants.dBlogic.SearchEnchantment(textBoxSearch, dataGridView1);
             enchants.dBlogic.DisplayProperties(textBoxSearch, dataGridView2);
         }
 
@@ -36,18 +36,6 @@ namespace Encantamientos
             else
             {
                 labelNotifications.Text = "";
-            }
-        }
-
-        private void textBoxLevel_TextChanged(object sender, EventArgs e)
-        {
-            if (textBoxLevel.Text.Equals(""))
-            {
-                labelLevel.ForeColor = Color.Black;
-            }
-            else
-            {
-                labelLevel.ForeColor = Color.Green;
             }
         }
 
@@ -82,7 +70,20 @@ namespace Encantamientos
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            int row = dataGridView1.CurrentCell.RowIndex;
+            dataGridView2.CurrentCell = dataGridView2.Rows[row].Cells[2];
+        }
 
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int row = dataGridView2.CurrentCell.RowIndex;
+            dataGridView1.CurrentCell = dataGridView1.Rows[row].Cells[0];
+        }
+
+        private void buttonRemove_Click(object sender, EventArgs e)
+        {
+            enchants.dBlogic.RemoveEnchantment(dataGridView2, textBoxSearch);
+            enchants.dBlogic.SearchEnchantment(textBoxSearch, dataGridView1);
         }
     }
 }
