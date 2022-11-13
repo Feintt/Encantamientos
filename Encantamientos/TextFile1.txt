@@ -4,28 +4,32 @@ TODO:
 
 PRESENTATION:
 	1.- Integrate the new design in the current form  F
-	2.- integrate the SQL server into de application  P
-	3.- Fill the database with the knonwn enchantments  T
-	4.- Integrate an "add" option, to add a new enchantment with its properties to the database  T
+	2.- integrate the SQL server into de application  F
+	3.- Fill the database with the knonwn enchantments  F
+	4.- Integrate an "add" option, to add a new enchantment with its properties to the database  F
 	5.- Integrate a "delete" option, to delete an enchantment from the database  T
 	6.- Integrate a "modify" option, to modify an enchantment from the database  T
 	7.- Integrate a "search" option, to search an enchantment from the database  F
 	8.- Validate the textEnchantmentBox and print an error message if the text is not valid  F
 	9.- Validate the textPowerBox and print an error message if the text is not valid  F
-	
-	
 
 BUSSINES:
 	1.- Validate the textEnchantmentBox if it is a letter, and return "true" or "false" depending on the KeyPress  F
 	2.- Validate the text and print an error message if the text is not valid  F
 	3.- Validate the textPowerBox if it is a number, and return "true" or "false" depending on the KeyPress  F
-	4 Validate the text and print an error message if the text is not a number F
+	4.- Validate the text and print an error message if the text is not a number F
 	5.- Change the color of the text fields when the text is not valid  F
 	6.- Change the color of the text fields when the text is valid  F
-	
+	7.- Manage the database connection  F
+	8.- Manage the database disconnection  F
+	9.- Manage the database insertion  F
+	10.- Manage the database deletion  F
+	11.- Manage the database modification  F
+	12.- Manage the database search  F
+	13.- Create a transaction to insert, delete or modify an enchantment  F
 
 DATA:
-
-F  -----> Finished
-P  -----> Pending
-T  -----> To do
+	1.- Mount the SQL Motor Server  F
+	2.- Create the database  F
+	3.- Create the table  F
+	4.- Insert the known enchantments  F
