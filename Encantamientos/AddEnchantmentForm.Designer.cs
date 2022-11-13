@@ -40,6 +40,7 @@
             this.labelTreasure = new System.Windows.Forms.Label();
             this.textBoxTreasure = new System.Windows.Forms.TextBox();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.labelError = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +82,7 @@
             this.textBoxEnchantmentName.Size = new System.Drawing.Size(342, 30);
             this.textBoxEnchantmentName.TabIndex = 2;
             this.textBoxEnchantmentName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxEnchantmentName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxEnchantmentName_KeyPress);
             // 
             // labelDescription
             // 
@@ -161,12 +163,23 @@
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.labelError.Font = new System.Drawing.Font("Minecraft", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelError.ForeColor = System.Drawing.Color.Red;
+            this.labelError.Location = new System.Drawing.Point(313, 173);
+            this.labelError.Name = "labelError";
+            this.labelError.Size = new System.Drawing.Size(0, 21);
+            this.labelError.TabIndex = 10;
+            // 
             // AddEnchantmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(883, 654);
+            this.Controls.Add(this.labelError);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.textBoxTreasure);
             this.Controls.Add(this.labelTreasure);
@@ -202,5 +215,6 @@
         private System.Windows.Forms.Label labelTreasure;
         private System.Windows.Forms.TextBox textBoxTreasure;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Label labelError;
     }
 }
