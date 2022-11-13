@@ -70,29 +70,29 @@ namespace Logic.Library.Calls
 				}).Skip(head).Take(_reg_by_page).ToList();
 			}
 		}
-		public void DisplayProperties(List<TextBox> listOfProperties, DataGridView dataGridView, Label label)
+        
+		public void DisplayProperties(TextBox searchBar, DataGridView dataGridView)
 		{
-			List<string> values = new List<string>();
-            
-            for (int i = 0; i < listOfProperties.Count; i++)
+            int head = (_num_of_pages - 1) * _reg_by_page;
+            List<EnchantmentsDB> query = new List<EnchantmentsDB>();
+            if (searchBar.Text.Equals(""))
             {
-				values[i] = listOfProperties[i].Text;
+                query = enchantmentsSB.ToList();
             }
-            List<EnchantmentsDB> names = new List<EnchantmentsDB>();
-            List<EnchantmentsDB> descriptions = new List<EnchantmentsDB>();
-            List<EnchantmentsDB> powers = new List<EnchantmentsDB>();
-            List<EnchantmentsDB> treasures = new List<EnchantmentsDB>();
-            names = enchantmentsSB.Where(c => c.eName.Equals(listOfProperties[0].Text)).ToList();
-            descriptions = enchantmentsSB.Where(c => c.eDescription.Equals(listOfProperties[1].Text)).ToList();
-            powers = enchantmentsSB.Where(c => c.ePower.Equals(listOfProperties[2].Text)).ToList();
-            treasures = enchantmentsSB.Where(c => c.eTreasure.Equals(listOfProperties[3].Text)).ToList();
-            
-            int rowindex = dataGridView.CurrentCell.RowIndex;
-            int columnindex = dataGridView.CurrentCell.ColumnIndex;
-            string name = dataGridView.Rows[rowindex].Cells[columnindex].Value.ToString();
-
-            int ID = values.IndexOf(name);
-            label.Text = ID.ToString();
+            else
+            {
+                query = enchantmentsSB.Where(c => c.eName.StartsWith(searchBar.Text)).ToList();
+            }
+            if (0 < query.Count)
+            {
+                dataGridView.DataSource = query.Select(c => new
+                {
+                    c.eName,
+                    c.eDescription,
+                    c.ePower,
+                    c.eTreasure
+                }).Skip(head).Take(_reg_by_page).ToList();
+            }
         }
 	}
 }
