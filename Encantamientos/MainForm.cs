@@ -1,5 +1,6 @@
 ﻿using Logic;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Encantamientos
@@ -55,18 +56,33 @@ namespace Encantamientos
 		{
 			int row = dataGridView1.CurrentCell.RowIndex;
 			dataGridView2.CurrentCell = dataGridView2.Rows[row].Cells[2];
-		}
+        }
 
-		private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
 			int row = dataGridView2.CurrentCell.RowIndex;
 			dataGridView1.CurrentCell = dataGridView1.Rows[row].Cells[0];
-		}
+        }
 
 		private void buttonRemove_Click(object sender, EventArgs e)
 		{
 			enchants.dBlogic.RemoveEnchantment(dataGridView2, textBoxSearch);
 			enchants.dBlogic.SearchEnchantment(textBoxSearch, dataGridView1);
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			List<string> properties = new List<string>
+			{
+				dataGridView2.CurrentRow.Cells[1].Value.ToString(),
+				dataGridView2.CurrentRow.Cells[2].Value.ToString(),
+				dataGridView2.CurrentRow.Cells[3].Value.ToString(),
+				dataGridView2.CurrentRow.Cells[4].Value.ToString(),
+				dataGridView2.CurrentRow.Cells[0].Value.ToString()
+			};
+            enchants.dBlogic.SearchEnchantment(textBoxSearch, dataGridView1);
+            EditEnchantmentForm editEnchantmentForm = new EditEnchantmentForm(properties);
+            editEnchantmentForm.Show();
+        }
 	}
 }
