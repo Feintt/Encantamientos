@@ -1,4 +1,8 @@
-﻿using Logic.Library.Calls;
+﻿// In this class, for every single class that we create, we will create an instance of that class
+// So we will be able to use the methods from any class
+// By creating a new instance of the Enchantments class
+
+using Logic.Library.Calls;
 
 namespace Logic.Library
 {
