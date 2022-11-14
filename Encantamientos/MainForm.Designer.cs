@@ -128,7 +128,6 @@
             this.pictureBoxEnchantment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxEnchantment.TabIndex = 2;
             this.pictureBoxEnchantment.TabStop = false;
-            this.pictureBoxEnchantment.Click += new System.EventHandler(this.pictureBoxEnchantment_Click);
             // 
             // groupBox5
             // 
@@ -168,6 +167,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(0, 9);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -226,7 +226,6 @@
             this.pictureBoxProperties.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxProperties.TabIndex = 3;
             this.pictureBoxProperties.TabStop = false;
-            this.pictureBoxProperties.Click += new System.EventHandler(this.pictureBoxProperties_Click);
             // 
             // groupBox6
             // 
@@ -263,6 +262,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView2.Location = new System.Drawing.Point(0, 3);
+            this.dataGridView2.MultiSelect = false;
             this.dataGridView2.Name = "dataGridView2";
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
@@ -336,7 +336,6 @@
             this.labelSearch.Size = new System.Drawing.Size(149, 21);
             this.labelSearch.TabIndex = 10;
             this.labelSearch.Text = "Search Bar";
-            this.labelSearch.Click += new System.EventHandler(this.labelError_Click);
             // 
             // buttonRemove
             // 
