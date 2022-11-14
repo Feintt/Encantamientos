@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Logic.Library
@@ -29,6 +25,7 @@ namespace Logic.Library
                 e.Handled = false;
                 return false;
             }
+            // We valiate if the key pressed is a backspace
             else if (e.KeyChar == Convert.ToChar(Keys.Space))
             {
                 e.Handled = false;
