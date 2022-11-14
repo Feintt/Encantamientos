@@ -54,7 +54,6 @@
     <Compile Include="Library\Calls\ValidateNumber.cs" />
     <Compile Include="Library\EventsObjects.cs" />
     <Compile Include="Library\Calls\ValidateLetter.cs" />
-    <Compile Include="Library\Calls\UploadImage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
