@@ -106,16 +106,15 @@ namespace Logic.Library.Calls
 			DisplayProperties(searchBar, dataGridView);
 		}
 
-        //public void UpdateEnchantment(List<TextBox> ListOfProperties, DataGridView dataGridView, TextBox searchBar)
-        //{
-        //    int ID = Convert.ToInt16(dataGridView.CurrentRow.Cells[0].Value);
-        //    enchantmentsSB.Where(c => c.id == ID)
-        //                  .Set(c => c.eName, ListOfProperties[0].Text)
-        //                  .Set(c => c.eDescription, ListOfProperties[1].Text)
-        //                  .Set(c => c.ePower, ListOfProperties[2].Text)
-        //                  .Set(c => c.eTreasure, ListOfProperties[3].Text)
-        //                  .Update();
-        //    DisplayProperties(searchBar, dataGridView);
-        //}
-    }
+		public void UpdateEnchantment(List<TextBox> ListOfProperties, string id)
+		{
+            int ID = Convert.ToInt16(id);
+            enchantmentsSB.Where(c => c.id == ID)
+						  .Set(c => c.eName, ListOfProperties[0].Text)
+						  .Set(c => c.eDescription, ListOfProperties[1].Text)
+						  .Set(c => c.ePower, ListOfProperties[2].Text)
+						  .Set(c => c.eTreasure, ListOfProperties[3].Text)
+						  .Update();
+		}
+	}
 }

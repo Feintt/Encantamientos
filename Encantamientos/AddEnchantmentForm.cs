@@ -62,7 +62,7 @@ namespace Encantamientos
             List<TextBox> ListOfProperties = new List<TextBox>();
             ListOfProperties.Add(textBoxEnchantmentName);
             ListOfProperties.Add(textBoxEnchantmentDescription);
-            ListOfProperties.Add(textBoxPower);
+            ListOfProperties.Add(textBoxEnchantmentPower);
             ListOfProperties.Add(textBoxTreasure);
 
             if (enchantments.dBlogic.EnchantmentExists(ListOfProperties))
@@ -81,7 +81,7 @@ namespace Encantamientos
         }
         private void textBoxPower_TextChanged(object sender, EventArgs e)
         {
-            if (textBoxPower.Text.Equals(""))
+            if (textBoxEnchantmentPower.Text.Equals(""))
             {
                 enchantments.enchantmentProperties.has_power = false;
             }

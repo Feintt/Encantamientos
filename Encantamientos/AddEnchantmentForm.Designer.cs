@@ -36,11 +36,12 @@
             this.labelDescription = new System.Windows.Forms.Label();
             this.textBoxEnchantmentDescription = new System.Windows.Forms.TextBox();
             this.labelPower = new System.Windows.Forms.Label();
-            this.textBoxPower = new System.Windows.Forms.TextBox();
+            this.textBoxEnchantmentPower = new System.Windows.Forms.TextBox();
             this.labelTreasure = new System.Windows.Forms.Label();
             this.textBoxTreasure = new System.Windows.Forms.TextBox();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.labelError = new System.Windows.Forms.Label();
+            this.textBoxPower = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,16 +117,16 @@
             this.labelPower.TabIndex = 5;
             this.labelPower.Text = "Max Power";
             // 
-            // textBoxPower
+            // textBoxEnchantmentPower
             // 
-            this.textBoxPower.Font = new System.Drawing.Font("Minecraft", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPower.Location = new System.Drawing.Point(313, 478);
-            this.textBoxPower.Name = "textBoxPower";
-            this.textBoxPower.Size = new System.Drawing.Size(40, 30);
-            this.textBoxPower.TabIndex = 6;
-            this.textBoxPower.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxPower.TextChanged += new System.EventHandler(this.textBoxPower_TextChanged);
-            this.textBoxPower.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPower_KeyPress);
+            this.textBoxEnchantmentPower.Font = new System.Drawing.Font("Minecraft", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEnchantmentPower.Location = new System.Drawing.Point(313, 478);
+            this.textBoxEnchantmentPower.Name = "textBoxEnchantmentPower";
+            this.textBoxEnchantmentPower.Size = new System.Drawing.Size(40, 30);
+            this.textBoxEnchantmentPower.TabIndex = 6;
+            this.textBoxEnchantmentPower.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxEnchantmentPower.TextChanged += new System.EventHandler(this.textBoxPower_TextChanged);
+            this.textBoxEnchantmentPower.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPower_KeyPress);
             // 
             // labelTreasure
             // 
@@ -152,7 +153,6 @@
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.Color.White;
-            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAdd.Enabled = false;
             this.buttonAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonAdd.FlatAppearance.BorderSize = 0;
@@ -176,6 +176,17 @@
             this.labelError.Size = new System.Drawing.Size(0, 21);
             this.labelError.TabIndex = 10;
             // 
+            // textBoxPower
+            // 
+            this.textBoxPower.Font = new System.Drawing.Font("Minecraft", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPower.Location = new System.Drawing.Point(313, 478);
+            this.textBoxPower.Name = "textBoxPower";
+            this.textBoxPower.Size = new System.Drawing.Size(40, 30);
+            this.textBoxPower.TabIndex = 6;
+            this.textBoxPower.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPower.TextChanged += new System.EventHandler(this.textBoxPower_TextChanged);
+            this.textBoxPower.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPower_KeyPress);
+            // 
             // AddEnchantmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,7 +197,7 @@
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.textBoxTreasure);
             this.Controls.Add(this.labelTreasure);
-            this.Controls.Add(this.textBoxPower);
+            this.Controls.Add(this.textBoxEnchantmentPower);
             this.Controls.Add(this.labelPower);
             this.Controls.Add(this.textBoxEnchantmentDescription);
             this.Controls.Add(this.labelDescription);
@@ -214,10 +225,11 @@
         private System.Windows.Forms.Label labelDescription;
         private System.Windows.Forms.TextBox textBoxEnchantmentDescription;
         private System.Windows.Forms.Label labelPower;
-        private System.Windows.Forms.TextBox textBoxPower;
+        private System.Windows.Forms.TextBox textBoxEnchantmentPower;
         private System.Windows.Forms.Label labelTreasure;
         private System.Windows.Forms.TextBox textBoxTreasure;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Label labelError;
+        private System.Windows.Forms.TextBox textBoxPower;
     }
 }
