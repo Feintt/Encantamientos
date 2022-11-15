@@ -14,7 +14,30 @@ namespace Encantamientos
             // When this form is loaded, we want to populate the listbox with the enchantments, also filtrate by the selected item in the Search Bar
             enchants.dBlogic.DisplayPropertiesLeft(textBoxSearch, dataGridView1);
 			enchants.dBlogic.DisplayPropertiesRight(textBoxSearch, dataGridView2);
-		}
+
+            // We print the current directory
+            Console.WriteLine(Environment.CurrentDirectory);
+
+            List<TextBox> textBoxes = new List<TextBox>();
+            TextBox textBox1 = new TextBox();
+			textBox1.Text = "a";
+
+            TextBox textBox2 = new TextBox();
+            textBox2.Text = "b";
+
+            TextBox textBox3 = new TextBox();
+            textBox3.Text = "c";
+
+            TextBox textBox4 = new TextBox();
+            textBox4.Text = "d";
+
+            textBoxes.Add(textBox1);
+            textBoxes.Add(textBox2);
+            textBoxes.Add(textBox3);
+            textBoxes.Add(textBox4);
+
+            enchants.dBlogic.AddEnchantment(textBoxes, textBoxSearch, dataGridView1, dataGridView2);
+        }
 
 		private void textBoxSearch_TextChanged(object sender, EventArgs e)
 		{

@@ -156,10 +156,10 @@ namespace Logic.Library.Calls
             // This will allow the cells to be auto adjusted to the size of the content, in the vertical direction
             dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             // Also, as we are displaying all the properties of the enchantments, we will hide the id and eName columns
-            dataGridView.Columns[0].Visible = false;
-            dataGridView.Columns[1].Visible = false;
-            // This will make the DataGridView to fit the content of the cells
-            dataGridView.Columns[2].Width = 215;
+            //dataGridView.Columns[0].Visible = false;
+            //dataGridView.Columns[1].Visible = false;
+            //// This will make the DataGridView to fit the content of the cells
+            //dataGridView.Columns[2].Width = 215;
         }
         public void RemoveEnchantment(DataGridView dataGridView, TextBox searchBar, DataGridView dataGridViewL, DataGridView dataGridViewR)
         {
