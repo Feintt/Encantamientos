@@ -37,9 +37,11 @@ namespace Encantamientos
             textBoxes.Add(textBox4);
 
             enchants.dBlogic.AddEnchantment(textBoxes, textBoxSearch, dataGridView1, dataGridView2);
+            //dataGridView2.Columns[0].Visible = false;
+            //dataGridView2.Columns[1].Visible = false;
         }
 
-		private void textBoxSearch_TextChanged(object sender, EventArgs e)
+        private void textBoxSearch_TextChanged(object sender, EventArgs e)
 		{
             // When the text in the Search Bar changes, we want to populate the listbox with the enchantments, also filtrate by the selected item in the Search Bar
             enchants.dBlogic.DisplayPropertiesLeft(textBoxSearch, dataGridView1);
