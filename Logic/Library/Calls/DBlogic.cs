@@ -7,6 +7,7 @@ using Data;
 using LinqToDB;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -38,7 +39,6 @@ namespace Logic.Library.Calls
             BeginTransactionAsync();
             try
             {
-
                 // We will call the enchantmentsSB interface from the Connection class
                 // We will use the Insert method to insert the data into the database
                 // We will pass a new record to the Insert method, we can do this by using the .Value() method
@@ -155,11 +155,22 @@ namespace Logic.Library.Calls
             dataGridView.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             // This will allow the cells to be auto adjusted to the size of the content, in the vertical direction
             dataGridView.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-            // Also, as we are displaying all the properties of the enchantments, we will hide the id and eName columns
-            dataGridView.Columns[0].Visible = false;
-            dataGridView.Columns[1].Visible = false;
-            // This will make the DataGridView to fit the content of the cells
-            dataGridView.Columns[2].Width = 215;
+            try
+            {
+                // Also, as we are displaying all the properties of the enchantments, we will hide the id and eName columns
+                dataGridView.Columns[0].Visible = false;
+                dataGridView.Columns[1].Visible = false;
+                // This will make the DataGridView to fit the content of the cells
+                dataGridView.Columns[2].Width = 215;
+            }
+            catch (Exception)
+            {
+                enchantmentsSB.Value(e => e.eName, "N/A")
+                              .Value(e => e.eDescription, "N/A")
+                              .Value(e => e.ePower, "N/A")
+                              .Value(e => e.eTreasure, "N/A")
+                              .Insert();
+            }
         }
         public void RemoveEnchantment(DataGridView dataGridView, TextBox searchBar, DataGridView dataGridViewL, DataGridView dataGridViewR)
         {
