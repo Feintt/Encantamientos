@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -92,6 +107,96 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DatabaseMail.exe.config" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\dcexec.exe.config" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\etwcls.mof" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\etwcls.mof.transformed" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\perf-MSSQL%24ENCHANTEDBOOKSDBsqlctr.ini" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\perf-SQLAgent%24ENCHANTEDBOOKSDBsqlagtctr.ini" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1028\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1028\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1028\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1029\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1030\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1031\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1031\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1031\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1032\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\DataCollectorController.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\DCEXEC.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\secauditpkg.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\SQLAGENT.RLL" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\SQLAGENTLOG.RLL" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\SQLAgentMail.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\SQLCMDSS.RLL" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\SQLDTSSS.RLL" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\sqliosim.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\SQLOLAPSS.RLL" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\SQLPOWERSHELLSS.RLL" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\SQLREPSS.RLL" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\sqlsvc.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\xeclrhostpkg.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\xepackage0.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\xesospkg.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\xesqlminpkg.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\xesqlpkg.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\xeucspkg.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\XPStar.RLL" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1035\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1036\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1036\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1036\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1038\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1040\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1040\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1040\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1041\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1041\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1041\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1042\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1042\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1042\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1043\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1044\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1045\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1046\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1046\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1046\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1049\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1049\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1049\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1053\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1055\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\2052\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\2052\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\2052\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\2070\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\3082\odsole70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\3082\sqlevn70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\3082\xplog70.rll" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLAGENT.exe.config" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlagtctr.ini" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlctr.ini" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLIOSIM.COM" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlservr.exe.config" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlwep-uni.mof" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Sqlwep-uni.mof.transformed" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xeclrhostpkg.mof" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xepkg0.mof" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xesospkg.mof" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xesqlminpkg.mof" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xesqlpkg.mof" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\PerfCountersCollect.dtsx" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\PerfCountersUpload.dtsx" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\QueryActivityCollect.dtsx" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\QueryActivityUpload.dtsx" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\SqlTraceCollect.dtsx" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\SqlTraceUpload.dtsx" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\TSQLQueryCollect.dtsx" />
+    <None Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\TSQLQueryUpload.dtsx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -110,6 +215,150 @@
     <None Include="Resources\Enchanted_book.ico" />
     <None Include="Resources\Enchanted_book.jpeg.jfif" />
     <None Include="Resources\wrench.jfif" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\adal.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\adalsqlrda.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\aetm-enclave.sgx.pkg\aetm-sgx-enclave-Simulator.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\aetm-enclave.sgx.pkg\aetm-sgx-enclave.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\aetm-enclave.vsm.pkg\aetm-enclave-Simulator.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\aetm-enclave.vsm.pkg\aetm-enclave.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\AzureAttest.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\AzureAttestManager.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\BackupToUrl.exe" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\batchparser.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DatabaseMail.exe" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DatabaseMailengine.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DatabaseMailprotocols.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DataCollectorController.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DCEXEC.EXE" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DllTmp32\sqlagentctr160.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DllTmp32\sqlctr160.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DllTmp64\sqlagentctr160.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\DllTmp64\sqlctr160.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\etwcnf.xml" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\ExaCorePredict.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\ExaCorePredictSql.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\fssres.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\hadrres.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\hkcompile.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\hkengine.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\hkruntime.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\hktempdb.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\lzn.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.AnalysisServices.AppLocal.Xmla.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.ApplicationInsights.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.Diagnostics.Tracing.EventSource.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlAutoAdmin.AutoBackupAgent.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlAutoAdmin.SqlAutoAdmin.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlServer.Types.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlServer.VdiInterface.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlServer.XE.Core.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlServer.XEvent.Configuration.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlServer.XEvent.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlServer.XEvent.Linq.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.SqlServer.XEvent.Targets.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Microsoft.WindowsAzure.Storage.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\mssqlsystemresource.ldf">
+      <DependentUpon>mssqlsystemresource.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\mssqlsystemresource.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\ODSOLE70.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\opends60.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\outputters\ParquetWriterOutputter.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\performancecounter.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\qds.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Resources\1033\sql_engine_core_inst_loc_keyfile.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\RsFxFt.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\secforwarder.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqagtres.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLAAMSS.DLL" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlaccess.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLAGENT.EXE" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLAGENTLOG.DLL" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLAgentMail.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlagtctr.h" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlboot.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlceip.exe" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLCMDSS.DLL" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlctr.h" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqldk.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLDTSSS.DLL" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLIOSIM.EXE" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqllang.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlmin.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLOLAPSS.DLL" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlos.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLPOWERSHELLSS.DLL" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SQLREPSS.DLL" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlresld.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SqlResourceLoader.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlscm.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlscriptdowngrade.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlscriptupgrade.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\SqlServerSpatial160.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlservr.exe" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqlsvc.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqltoolsmailutilities.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqltses.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\sqsrvres.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\StretchCodeGen.exe" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\svl.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\master.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\mastlog.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\model.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\modellog.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\model_msdbdata.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\model_msdblog.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\model_replicatedmaster.ldf">
+      <DependentUpon>model_replicatedmaster.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\model_replicatedmaster.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\msdbdata.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Templates\msdblog.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xe.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xmlrw.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xmlrwbin.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xpadsi.exe" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xplog70.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\xpsqlbot.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\XPStar.DLL" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\DbEngine_hotfix_install.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\DbEngine_hotfix_uninstall.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\instmdw.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\instmsdb.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\msdb110_upgrade.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\odsole.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\oledbsch.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\procsyst.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\ProvisionAgentIdentity.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\sqldmo.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\sqlscriptdowngrade.dll" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\SSIS_hotfix_install.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\SSIS_hotfix_uninstall.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\u_tables.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Install\xpstar.sql" />
+    <Content Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\sql_engine_core_inst_keyfile.dll" />
     <Content Include="TextFile1.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +370,25 @@
       <Project>{f51806bf-d237-4647-9724-724ed8c22465}</Project>
       <Name>Logic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Backup\" />
+    <Folder Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Binn\Xtp\" />
+    <Folder Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\DATA\" />
+    <Folder Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\JOBS\" />
+    <Folder Include="MSSQL16.ENCHANTEDBOOKSDB\MSSQL\Log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
